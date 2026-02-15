@@ -18,13 +18,18 @@ function initStorage() {
         localStorage.setItem('sozluk_nextEntryId', '1');
     }
     
-    nextTopicId = parseInt(localStorage.getItem('sozluk_nextTopicId'));
-    nextEntryId = parseInt(localStorage.getItem('sozluk_nextEntryId'));
+    nextTopicId = parseInt(localStorage.getItem('sozluk_nextTopicId')) || 1;
+    nextEntryId = parseInt(localStorage.getItem('sozluk_nextEntryId')) || 1;
 }
 
 // Get all topics
 function getTopics() {
-    return JSON.parse(localStorage.getItem('sozluk_topics') || '[]');
+    try {
+        return JSON.parse(localStorage.getItem('sozluk_topics') || '[]');
+    } catch (e) {
+        console.error('Error parsing topics from localStorage:', e);
+        return [];
+    }
 }
 
 // Save topics
@@ -34,7 +39,12 @@ function saveTopics(topics) {
 
 // Get all entries
 function getEntries() {
-    return JSON.parse(localStorage.getItem('sozluk_entries') || '[]');
+    try {
+        return JSON.parse(localStorage.getItem('sozluk_entries') || '[]');
+    } catch (e) {
+        console.error('Error parsing entries from localStorage:', e);
+        return [];
+    }
 }
 
 // Save entries
