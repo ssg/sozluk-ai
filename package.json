@@ -1,0 +1,27 @@
+{
+  "name": "sozluk-ai",
+  "version": "1.0.0",
+  "description": "AI tarafından oluşturulmuş ekşi sözlük klonu",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ssg/sozluk-ai.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/ssg/sozluk-ai/issues"
+  },
+  "homepage": "https://github.com/ssg/sozluk-ai#readme",
+  "dependencies": {
+    "body-parser": "^2.2.2",
+    "express": "^5.2.1",
+    "sqlite3": "^5.1.7"
+  }
+}

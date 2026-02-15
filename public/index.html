@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sözlük AI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>sözlük ai</h1>
+        </header>
+        
+        <div class="main-content">
+            <!-- Left sidebar with topics -->
+            <aside class="topics-sidebar">
+                <div class="new-entry-form">
+                    <input type="text" id="topicInput" placeholder="başlık" />
+                    <textarea id="contentInput" placeholder="entry girin..." rows="4"></textarea>
+                    <input type="text" id="authorInput" placeholder="nick" />
+                    <button id="submitBtn">gönder</button>
+                </div>
+                <div class="topics-list" id="topicsList">
+                    <!-- Topics will be loaded here -->
+                </div>
+            </aside>
+            
+            <!-- Right panel with entries -->
+            <main class="entries-panel">
+                <div id="entriesContainer">
+                    <div class="welcome-message">
+                        <h2>hoşgeldiniz!</h2>
+                        <p>soldaki listeden bir başlık seçin veya yeni bir entry girin.</p>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+    
+    <script src="app.js"></script>
+</body>
+</html>
