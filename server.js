@@ -9,7 +9,8 @@ const PORT = process.env.PORT || 3000;
 app.use(bodyParser.json());
 app.use(express.static('public'));
 
-// Initialize database
+// Initialize database (using in-memory database for simplicity)
+// For production, consider using: new sqlite3.Database('./database.sqlite')
 const db = new sqlite3.Database(':memory:');
 
 db.serialize(() => {
