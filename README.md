@@ -150,10 +150,6 @@ AI tarafından tamamen oluşturulmuş bir ekşi sözlük klonu. Bu proje, modern
 - [ ] Sayfalama (pagination)
 - [ ] Responsive tasarım iyileştirmeleri
 
-## 📄 Lisans
-
-ISC
-
 ## 👨‍💻 Katkıda Bulunma
 
 Pull request'ler kabul edilir. Büyük değişiklikler için lütfen önce bir issue açarak ne değiştirmek istediğinizi tartışın.
