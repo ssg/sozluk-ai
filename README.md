@@ -1,4 +1,4 @@
-# sözlük ai
+# sözlük-ai
 
 > 📝 **Not:** Bu README, GitHub Copilot tarafından otomatik olarak güncellenmiştir.
 
@@ -92,7 +92,7 @@ AI tarafından tamamen oluşturulmuş bir ekşi sözlük klonu. Bu proje, modern
 
 #### **Türkçe Arayüz**
 - Tüm arayüz elementleri Türkçe
-- Tarih formatı: `GG.AA.YYYY SS:DD` (Türkiye standardı)
+- Tarih formatı: `GG.AA.YYYY HH:MM` (Türkiye standardı - gün.ay.yıl saat:dakika)
 
 ## 🚀 Kurulum ve Çalıştırma
 
