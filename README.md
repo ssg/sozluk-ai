@@ -96,11 +96,37 @@ AI tarafından tamamen oluşturulmuş bir ekşi sözlük klonu. Bu proje, modern
 
 ## 🚀 Kurulum ve Çalıştırma
 
-### Gereksinimler
+### Docker ile Çalıştırma (Önerilen)
+
+Docker kullanarak uygulamayı hızlıca çalıştırabilirsiniz:
+
+1. **Docker image'ını build edin:**
+   ```bash
+   docker build -t sozluk-ai .
+   ```
+
+2. **Container'ı çalıştırın:**
+   ```bash
+   docker run -d -p 4242:4242 --name sozluk-ai sozluk-ai
+   ```
+
+3. **Tarayıcınızda açın:**
+   ```
+   http://localhost:4242
+   ```
+
+4. **Container'ı durdurmak için:**
+   ```bash
+   docker stop sozluk-ai
+   ```
+
+### Manuel Kurulum
+
+#### Gereksinimler
 - Node.js (v14 veya üzeri)
 - npm veya yarn
 
-### Adımlar
+#### Adımlar
 
 1. **Projeyi klonlayın:**
    ```bash
@@ -120,7 +146,7 @@ AI tarafından tamamen oluşturulmuş bir ekşi sözlük klonu. Bu proje, modern
 
 4. **Tarayıcınızda açın:**
    ```
-   http://localhost:3000
+   http://localhost:4242
    ```
 
 ## 📝 Kullanım
