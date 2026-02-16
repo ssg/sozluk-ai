@@ -39,8 +39,11 @@ RUN chown -R nodejs:nodejs /app
 
 USER nodejs
 
+# Set the port the app runs on
+ENV PORT=4242
+
 # Expose the port the app runs on
-EXPOSE 3000
+EXPOSE 4242
 
 # Start the application
 CMD ["node", "server.js"]

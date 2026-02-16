@@ -107,12 +107,12 @@ Docker kullanarak uygulamayı hızlıca çalıştırabilirsiniz:
 
 2. **Container'ı çalıştırın:**
    ```bash
-   docker run -d -p 3000:3000 --name sozluk-ai sozluk-ai
+   docker run -d -p 4242:4242 --name sozluk-ai sozluk-ai
    ```
 
 3. **Tarayıcınızda açın:**
    ```
-   http://localhost:3000
+   http://localhost:4242
    ```
 
 4. **Container'ı durdurmak için:**
