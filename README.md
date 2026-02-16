@@ -146,7 +146,7 @@ Docker kullanarak uygulamayı hızlıca çalıştırabilirsiniz:
 
 4. **Tarayıcınızda açın:**
    ```
-   http://localhost:3000
+   http://localhost:4242
    ```
 
 ## 📝 Kullanım
