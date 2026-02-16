@@ -24,16 +24,18 @@ FROM node:20-slim
 # Set working directory
 WORKDIR /app
 
+# Create a non-root user
+RUN groupadd --gid 1001 nodejs && \
+    useradd --uid 1001 --gid nodejs --shell /bin/bash --create-home nodejs
+
 # Copy dependencies from builder
 COPY --from=builder /app/node_modules ./node_modules
 
 # Copy application code
 COPY . .
 
-# Create a non-root user and switch to it
-RUN groupadd --gid 1001 nodejs && \
-    useradd --uid 1001 --gid nodejs --shell /bin/bash --create-home nodejs && \
-    chown -R nodejs:nodejs /app
+# Change ownership to non-root user
+RUN chown -R nodejs:nodejs /app
 
 USER nodejs
 
