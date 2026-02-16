@@ -4,6 +4,5 @@ npm-debug.log
 .DS_Store
 .git
 .gitignore
-README.md
 .dockerignore
 Dockerfile

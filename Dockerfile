@@ -1,5 +1,5 @@
-# Use official Node.js LTS (Long Term Support) image
-FROM node:20-slim
+# Build stage
+FROM node:20-slim AS builder
 
 # Set working directory
 WORKDIR /app
@@ -17,6 +17,15 @@ COPY package*.json ./
 
 # Install dependencies
 RUN npm ci --omit=dev
+
+# Production stage
+FROM node:20-slim
+
+# Set working directory
+WORKDIR /app
+
+# Copy dependencies from builder
+COPY --from=builder /app/node_modules ./node_modules
 
 # Copy application code
 COPY . .
